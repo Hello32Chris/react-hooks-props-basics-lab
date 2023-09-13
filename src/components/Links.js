@@ -1,14 +1,12 @@
 import React from "react";
 
-function Links( {bio, links} ) {
-    const gitHubLink = links[0]
-    const linkedInLink = links[1]
+function Links( {github, linkedin} ) {
 
     return (
     <div> 
         <h3>Links</h3>
-        <a href={gitHubLink}>https://github.com/liza</a>
-        <a href={linkedInLink}>https://www.linkedin.com/in/liza/</a>
+        <a href={github}>{github}</a>
+        <a href={linkedin}>{linkedin}</a>
     </div>
   );
 }
